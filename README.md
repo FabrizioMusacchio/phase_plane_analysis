@@ -13,3 +13,5 @@ conda install -y mamba
 mamba install -y ipykernel numpy matplotlib scipy
 ```
 
+
+![img](figures/pendulum_phase_portrait_z1.0_0_thumb.png)
