@@ -48,10 +48,10 @@ t_span = [0, eval_time]
 t_eval = np.linspace(*t_span, t_iteration)
 
 # set initial conditions:
-z0 = [1.0, 0.0] # [2, 0]
+z0 = [0.5, 0.5] # [2, 0]
 
 # set Van der Pol oscillator parameter:
-mu = -4.0 # stable: >0, unstable: <0
+mu = 2.0 # stable: >0, unstable: <0
 
 # calculate the vector field:
 mgrid_size = 8
@@ -98,5 +98,22 @@ plt.gca().spines['left'].set_visible(False)
 plt.ylim(-mgrid_size, mgrid_size)
 plt.tight_layout()
 plt.savefig(f'figures/van_der_pol_oscillator_lienard_z_{z0[0]}_{z0[1]}_mu_{mu}.png', dpi=120)
+plt.show()
+
+plt.figure(figsize=(8, 5))
+plt.plot(sol_stable.t, sol_stable.y[0], 'b-', lw=2, label='$x(t)$')
+plt.title(f'$x(t)$, $\mu$={mu}, $z_0$={z0}')
+plt.xlabel('Time')
+plt.ylabel('x(t)')
+plt.legend(loc='best')
+plt.grid(True)
+# remove box on the right and top:
+ax = plt.gca()
+ax.spines['top'].set_visible(False)
+ax.spines['right'].set_visible(False)
+ax.spines['bottom'].set_visible(False)
+ax.spines['left'].set_visible(False)
+plt.tight_layout()
+plt.savefig(f'figures/van_der_pol_oscillator_lienard_x_t_{z0[0]}_{z0[1]}_mu_{mu}.png', dpi=120)
 plt.show()
 # %% END
