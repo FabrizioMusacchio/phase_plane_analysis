@@ -15,4 +15,4 @@ mamba install -y ipykernel numpy matplotlib scipy
 ```
 
 
-![img](figures/pendulum_phase_portrait_z1.0_0_thumb.png)
+![img](pendulum_phase_portrait_z1.0_0_thumb.png)
