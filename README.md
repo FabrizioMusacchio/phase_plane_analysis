@@ -16,3 +16,6 @@ mamba install -y ipykernel numpy matplotlib scipy
 
 
 ![img](pendulum_phase_portrait_z1.0_0_thumb.png)
+![img](van_der_pol_oscillator_z_4_0_mu_2.png)
+![img](FitzHugh_Nagumo_thumb_big.jpg)
+
