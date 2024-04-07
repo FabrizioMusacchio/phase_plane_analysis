@@ -4,6 +4,7 @@ Python scripts supporting tutorials on phase plane analysis. For more details, s
 
 * [Using phase plane analysis to understand dynamical systems](https://www.fabriziomusacchio.com/blog/2024-03-17-phase_plane_analysis/)
 * [The Van der Pol oscillator](https://www.fabriziomusacchio.com/blog/2024-03-24-van_der_pol_oscillator/)
+* [FitzHugh-Nagumo model](https://www.fabriziomusacchio.com/blog/2024-04-07-fitzhugh_nagumo_model/)
 
 For reproducibility:
 
